@@ -7,3 +7,10 @@ router.get('/', function(req, res, next) {
 });
 
 module.exports = router;
+
+/* GET users cool. */
+router.get('/cool', function(req, res, next) {
+  res.render('index', { title: 'you are so cool!' });
+});
+
+module.exports = router;
